@@ -8,7 +8,7 @@
 <title>Welcome Download your youtube video here-</title>
 </head>
 <body>
-<form>
+<form><?php echo $_POST["v"]; ?>
 <input name="url" type="text">
 <input type="submit" value="Get It :)">
 
