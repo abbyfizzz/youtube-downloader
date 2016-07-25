@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.hhtp import HttpResponse
+from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("<h1>tst</h1>")
+    return render(request, 'home.html')
+
+def contact(request):
+    return render(request, 'contact.html' ,{'con':['Here is My contact email address ping me','abbyfizzz@gmail.com']} )
